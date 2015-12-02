@@ -1,2 +1,5 @@
-input = String.rstrip(IO.gets "What is the input string? ")
-IO.puts "#{input} has #{String.length(input)} chars."
+"What is the input string? "
+  |> IO.gets
+  |> String.rstrip
+  |> (&("#{&1} has #{String.length(&1)} chars")).()
+  |> IO.puts
