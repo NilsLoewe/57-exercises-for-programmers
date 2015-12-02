@@ -1,4 +1,3 @@
-quote  = String.rstrip(IO.gets "What is the quote? ")
-author = String.rstrip(IO.gets "Who said it? ")
-
-IO.puts "#{author} says, \"#{quote}\""
+quote = "What is the quote? "  |> IO.gets |> String.rstrip
+author = "Who said it? "       |> IO.gets |> String.rstrip
+"#{author} says, \"#{quote}\"" |> IO.puts
